@@ -1,0 +1,39 @@
+<div *ngIf="numerosExcluir && numerosExcluir.length > 0">
+  <div class="row">
+    <div class="col-sm-12 m-5">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Números Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let numero of numerosExcluir;">
+            <td>{{numero}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</div>
+
+
+<div *ngIf="numerosGerados && numerosGerados.length > 0">
+  <div class="row">
+    <div class="col-sm-12 m-5">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Números Gerados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let numero of numerosGerados;">
+            <td>{{numero}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
